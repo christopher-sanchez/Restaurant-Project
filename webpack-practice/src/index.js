@@ -1,9 +1,25 @@
-import { greeting } from './greeting.js';
-import './style.css';
-import odinImage from './odin.png';
-const image = document.createElement('img');
-image.src = odinImage;
-document.body.appendChild(image);
-console.log("CSS loaded successfully!");
-console.log(greeting);
+import loadHome from "./home.js";
+import loadMenu from "./menu.js";
+import loadAbout from "./about.js";
+
+const content = document.getElementById("content");
+
+function clearContent() {
+    content.innerHTML = "";
+}
+
+document.getElementById("home-btn")
+    .addEventListener("click", () => {
+        clearContent();
+        loadHome();
+    });
+
+document.getElementById("menu-btn")
+    .addEventListener("click", () => {
+        clearContent();
+        loadMenu();
+    });
+
+    loadHome();
+
 
