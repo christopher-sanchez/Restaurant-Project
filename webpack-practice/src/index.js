@@ -20,6 +20,11 @@ document.getElementById("menu-btn")
         loadMenu();
     });
 
+document.getElementById("about-btn")
+    .addEventListener("click", () =>{
+        clearContent();
+        loadAbout();
+    });
     loadHome();
 
 
