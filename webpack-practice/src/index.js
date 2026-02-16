@@ -27,4 +27,4 @@ document.getElementById("about-btn")
     });
     loadHome();
 
-
+    console.log("running");
