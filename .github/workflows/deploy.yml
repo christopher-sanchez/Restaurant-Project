@@ -3,11 +3,12 @@ name: Deploy to GitHub Pages
 on:
   # Run when pushed. Use { branches: [main, master] } to run only on specific branches
   push:
+ 
+
   # Allow manual triggering of the workflow
   workflow_dispatch:
-  # OPTIONAL: Run at a specific cron schedule, e.g. first day of every month at 12:00 UTC (noon)
-  schedule:
-    - cron: "0 12 1 * *"
+
+  
 
 permissions:
   # To deploy to GitHub Pages
